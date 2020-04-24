@@ -61,10 +61,8 @@ public class NBAPlayoff extends JFrame  {
 
 	}
 	public static void main(String[] args) {
-
 		NBAPlayoff frame = new NBAPlayoff();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
 		frame.setSize(1600, 800);	     
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);

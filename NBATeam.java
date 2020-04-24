@@ -29,17 +29,21 @@ public class NBATeam {
 		return min;
 	}
 
-	public int getAvgAge() {
+	public double getAvgAge() {
 		int sum = 0;
 		for(int i = 0; i < this.playerAges.size(); i++) {
 			sum += this.playerAges.get(i);
 		}
-
-		return sum/this.playerAges.size();
+		double avg = (double)sum/this.playerAges.size();
+		return avg;
 	}
 
 	public int getNumOfPlayer(){
-		return this.playerNames.size();
+		return this.playerNames.size(); 
+	}
+	
+	public String getPlayer(int index) {
+		return this.playerNames.get(index);
 	}
 
 }
